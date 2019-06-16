@@ -29,16 +29,16 @@ def load(dataset="training", path=None):
     if path is None:
         path = '/datasets/MNIST'
         if not os.path.isdir(path):
-            path = './MNIST'
+            path = './datasets/MNIST'
     if not os.path.isdir(path):
         raise ValueError("Cannot find dataset at '%s'" % path)
 
     if dataset is "training":
-        fname_img = os.path.join(path, 'train-images-idx3-ubyte')
-        fname_lbl = os.path.join(path, 'train-labels-idx1-ubyte')
+        fname_img = os.path.join(path, 'train-images.idx3-ubyte')
+        fname_lbl = os.path.join(path, 'train-labels.idx1-ubyte')
     elif dataset is "testing":
-        fname_img = os.path.join(path, 't10k-images-idx3-ubyte')
-        fname_lbl = os.path.join(path, 't10k-labels-idx1-ubyte')
+        fname_img = os.path.join(path, 't10k-images.idx3-ubyte')
+        fname_lbl = os.path.join(path, 't10k-labels.idx1-ubyte')
     else:
         raise ValueError("dataset must be 'testing' or 'training'")
 
