@@ -4,5 +4,5 @@
 > Have Fun Reading :)
 
 #
-* Demonstration is edited in the jupyter notebook file ANN.ipynb.  
-* If you would like to ues any of the functions used in the demonstration, refer to the python file ANN.py.
+* Demonstration is edited in the jupyter notebook file **[ANN.ipynb](ANN.ipynb)**.  
+* If you would like to ues any of the functions used in the demonstration, refer to the python file **[ANN.py](ANN.py)**.
